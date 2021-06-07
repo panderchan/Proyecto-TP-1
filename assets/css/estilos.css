@@ -1,0 +1,285 @@
+/*
+---------------------------------------------
+Índice
+------------------------------------------------
+1. Typography
+2. Main Nav
+3. Home
+4. About
+5. Work
+6. Single Work
+7. Pricing
+8. Contact
+--------------------------------------------- */
+
+html, body {font-family: 'Mali', cursive;}
+/* Typography */
+p, a {font-weight: 400; }
+.h2 {font-size: 40px;/*color:#36c884*/}
+.h3 {font-size: 28px;}
+.light-300 {
+  font-family: 'Mali', cursive !important;
+  font-weight: 300;
+}
+.regular-400 {
+  font-family: 'Mali', cursive !important;
+  font-weight: 400;
+}
+.semi-bold-600 {
+  font-family: 'Mali', cursive !important;
+  font-weight: 600;
+}
+
+.h1{ font-family: 'Pacifico', cursive!important;
+color: white;
+
+text-shadow: 0 0 10px #000;
+
+}
+.bg-secondary{
+    background-color: #ff7bac!important;
+   
+}
+.text-secondary{
+ color: #69edcb!important;
+}
+.bg-primary{
+    background-color: #69edcb !important;
+}
+a, a.btn, a:active, a:hover{
+color: #ff7bac;
+}
+
+
+.typo-space-line::after,
+.typo-space-line-center::after {
+  content: "";
+  width: 150px;
+  display:block;
+  position: absolute;
+  border-bottom:  5px solid #ff7bac;
+  padding-top: .5em;
+}
+.typo-space-line-center::after {
+  left: 50%;
+  margin-left: -75px;
+}
+/* Main Nav */
+#main_nav .nav-item .nav-link:hover {color: #fff;}
+/* Home */
+#index_banner {
+
+  height: 100%;
+  min-height: 60vh;
+  width: 100%;
+
+
+background-color: #69edcb;
+
+background-image:  radial-gradient(#15aab1 0.75px, transparent 0.75px), radial-gradient(#15aab1 0.75px, #54bfa3 0.75px);
+background-size: 30px 30px;
+background-position: 0 0,15px 15px;
+
+
+}
+#index_banner .carousel-item {
+  min-height: 60vh;
+
+}
+.imagecontent{
+ 
+
+height: 0;
+width:80%;
+padding-bottom:80%;
+background-color:#ff7bac;
+border-radius: 50%;
+max-height: 38vh;
+
+}
+.main-image-slider{
+
+  width: 100%;
+  transform: scale(1.2);
+  transition: transform .5s;
+}
+.main-image-slider:hover{
+transform: scale(1.4);
+}
+
+#index_banner .carousel-control-prev i,
+#index_banner .carousel-control-next i {
+  color: #ff7bac !important;
+  text-decoration: none;
+  font-size: 4em;
+}
+#index_banner .carousel-inner {
+  height: 80vh;
+}
+#index_banner .carousel-indicators li,
+#index_banner .carousel-indicators.active {
+  background-color: #ff7bac !important;
+  // las rayas de abajo del carrousel van de color azul
+}
+
+.btn-primary, .btn-outline-primary:hover, .btn-outline-primary:active, .btn-outline-primary.active{
+background-color: #69edcb;
+border:none;
+font-weight: 600;
+color: #ff7bac!important;
+
+}
+.btn-primary:hover, .btn-primary:active{
+  background-color: pink;
+}
+
+.service-wrapper .service-footer {
+  max-width: 720px;
+
+}
+.service-work.card {
+  border-radius: 50% !important;
+  cursor: pointer;
+
+}
+
+.service-work.card:hover{
+
+       -webkit-box-shadow: 8px 7px 0px 4px #BFBFBF; 
+box-shadow: 8px 7px 0px 4px #BFBFBF;
+
+}
+.service-work .service-work-vertical {
+
+background-image: url('../img/heart.svg');
+background-repeat: no-repeat;
+background-size: 25%;
+background-position: 50% 90%;
+
+  transition: .5s;
+}
+.service-work .service-work-vertical:hover {
+
+   transition: .5s;
+background-size: 35%;
+background-color: rgba(255,160,195,.8);
+
+}
+
+.service-work-vertical:hover:after{
+
+  content: '';
+}
+
+.service-work-content{
+  text-align:center!important;
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15%;
+}
+.service-work h1{
+
+}
+.service-work .service-work-vertical:hover * {
+  /*color: #34ebb4;*/ 
+  border-color: #000;
+  transition: .5s;
+}
+.recent-work.card{
+  border-radius: 10px !important;
+}
+.recent-work .recent-work-vertical {
+	background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,.5) 15%, rgba(255,255,255,0) 15%);
+  background-size: 300% 300%;
+  background-position: 0% 100%;
+  transition: .5s;
+  cursor: pointer;
+}
+.recent-work .recent-work-vertical:hover {
+  background-position: 0% 0%;
+  transition: .5s;
+}
+.recent-work .recent-work-vertical:hover div.recent-work-content {
+  top: 50%;
+  margin-top: -2.5em;
+  position: absolute;
+}
+.recent-work .recent-work-vertical:hover * {
+  color: #fff;
+  transition: .5s;
+  text-shadow: 0 0 10px #000;
+}
+
+
+/* About */
+#work_banner {
+  background-image: url('./../img/banner-bg-02.jpg');
+  background-position: center center; background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.progress {
+  height: 8px;
+}
+.objective-icon {
+  border-radius: 13px;
+  width: 8rem;
+}
+.partner-wap {
+  background-color: #7276ec;
+  transition: 1s;
+  cursor: pointer;
+}
+.partner-wap:hover {
+  background-color: #b1b3f5;
+}
+.why-us {
+  background: rgb(239,239,253);
+  background: -moz-linear-gradient(0deg, rgba(239,239,253,1) 50%, rgba(255,255,255,1) 50%);
+  background: -webkit-linear-gradient(0deg, rgba(239,239,253,1) 50%, rgba(255,255,255,1) 50%);
+  background: linear-gradient(0deg, rgba(239,239,253,1) 50%, rgba(255,255,255,1) 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#efeffd",endColorstr="#ffffff",GradientType=1);
+}
+.team-member-img {
+  transition-duration: 0.15s;
+}
+.team-member:hover .team-member-img {
+  padding: 10px !important;
+}
+
+/* Work */
+/* Singel Work */
+#work_single_banner {
+  background-image: url('./../img/banner-bg-02.jpg');
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.related-content {
+  border-radius: 20px;
+  cursor: pointer;
+}
+/* Pricing */
+.pricing-list {
+  margin-bottom: 1px;
+}
+.pricing-table {
+  max-width: 350px;
+  margin: auto;
+}
+.pricing-table,
+.pricing-horizontal {
+  border-radius: 15px !important;
+}
+/* Contact */
+#floatingtextarea {
+  height: 150px
+}
+/* Footer */
+footer a.text-light:hover {
+  color: #bfbfbf !important;
+  transition-duration: 0.15s;
+}
